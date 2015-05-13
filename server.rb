@@ -14,6 +14,11 @@ get '/shirts/search' do
   erb :results, locals: {shirts: shirts}
 end
 
+get '/shirts/admin' do
+  shirts = Shirt.all
+  erb :admin, locals: {shirts: shirts}
+end
+
 get '/shirts/:id/admin/' do
   shirt = Shirt.find(params[:id])
   erb :edit, locals: {shirt: shirt}
@@ -26,11 +31,10 @@ end
 
 post '/shirts' do
   Shirt.create({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
-  redirect('/admin')
+  redirect('/shirts/admin')
 end
 
 put '/shirts/:id' do
   Shirt.update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
-  redirtect('/admin')
+  redirtect("/shirts/#{params[:id]}/admin")
 end
-
