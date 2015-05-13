@@ -1,27 +1,39 @@
-$l-grey: rgba(170, 170, 170, .8);
-$d-grey: rgba(130, 130, 130, .85);
-$grey: linear-gradient($l-grey, $d-grey);
-$white: rgba(255, 255, 255, 1);
-$l-pink: rgba(255, 200, 200, 1);
-$f-pink: rgba(140, 40, 10, 0.4);
-$margin: 5%;
-$font-s: 'Raleway', Futura, Verdana, arial, sans-serif;
-$primc: rgba(120, 250, 250, .5);
-$primf: rgba(240, 90, 190, 1);
-$primb: rgba(220, 60, 60, .05);
-$primg: rgba(180, 50, 50, .75);
-$tri1: rgba(30, 170, 230, .85);
-$tri2: rgba(20, 160, 220, .9);
-$trif: linear-gradient($tri1, $tri2);
-$tric: rgba(10, 120, 180, .95);
-$trib: rgba(182, 222, 182, .1);
-$secg: rgba(50, 215, 150, 1);
-$secG: rgba(20, 185, 120, 1);
-$secf: rgba(245, 245, 90, 1);
-$sec1: rgba(250, 235, 200, .222);
-$sec2: rgba(255, 245, 210, .18);
-$secb: linear-gradient($sec2, $sec1);
+/* ALL COLORS */
 
+/* GREY COLORS */
+$l-grey: rgba(200, 200, 200, .8);
+$d-grey: rgba(150, 150, 150, .85);
+$grey: linear-gradient($l-grey, $d-grey);
+$back-f-grey: rgba(182, 222, 182, .1);
+$back-l-grey: rgba(250, 235, 200, .222);
+$back-d-grey: rgba(255, 245, 210, .18);
+$g-grey: linear-gradient($back-l-grey, $back-d-grey);
+
+
+$l-pink: rgba(255, 200, 200, 1);
+$back-f-pink: rgba(140, 40, 10, 0.4);
+$s-purp: rgba(240, 90, 190, 1);
+$back-pink: rgba(220, 60, 60, .05);
+$full-pink: rgba(180, 50, 50, .75);
+
+/* CYAN COLORS */
+$back-cyan: rgba(120, 250, 250, .5);
+$l-cyan: rgba(30, 170, 230, .85);
+$d-cyan: rgba(20, 160, 220, .9);
+$g-cyan: linear-gradient($l-cyan, $d-cyan);
+$d-green-cyan: rgba(20, 185, 120, 1);
+$l-green-cyan: rgba(50, 215, 150, 1);
+$g-green-cyan: linear-gradient($l-green-cyan, $d-green-cyan);
+$blue-cyan: rgba(10, 120, 180, .95);
+
+/* OTHER COLORS */
+$white: rgba(255, 255, 255, 1);
+
+$yellow: rgba(245, 245, 90, 1);
+
+/* OTHER VARIABLES */
+$s-font: 'Raleway', Futura, Verdana, arial, sans-serif;
+$margin: 5%;
 * {
     margin         : 0 auto;
     padding        : 0;
@@ -30,7 +42,7 @@ $secb: linear-gradient($sec2, $sec1);
     vertical-align : baseline;
     background     : transparent;
     font-size   : 1.15em;
-    font-family : $font-s;
+    font-family : $s-font;
     -webkit-box-sizing : border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing    : border-box; /* Firefox, other Gecko */
     box-sizing         : border-box; /* Opera/IE 8+ */
@@ -38,7 +50,7 @@ $secb: linear-gradient($sec2, $sec1);
 
 html { 
   background: $grey;
-  font-family: $font-s;
+  font-family: $s-font;
   margin: $margin auto;
 }
 
@@ -48,8 +60,7 @@ header {
   ul { 
     display: inline-block;
     min-width: 90%;
-    }
-  
+    }  
 }
 
 body {
@@ -66,7 +77,7 @@ body {
     flex-wrap: wrap;
   }
    a, button, input {
-    color: $secg;
+    color: $back-f-grey;
     font-size: 1.1em;
     padding: 1px;
     text-decoration: blink;
@@ -75,11 +86,11 @@ body {
     border-bottom: 1px solid $grey;
    }
    &:focus {
-    box-shadow: 0 0 10px $secg;
+    box-shadow: 0 0 10px $back-f-grey;
     outline: 0;
    }
    a:hover, button:hover, input:hover {
-    box-shadow: 0 0 15px $secg;
+    box-shadow: 0 0 15px $back-f-grey;
    }
 
   input {
@@ -88,27 +99,27 @@ body {
   }
 }
 ::-webkit-input-placeholder {
-  color: $f-pink;
+  color: $back-f-pink;
   z-index: 10;
   }
   :-moz-placeholder {
-  color: $f-pink;
+  color: $back-f-pink;
   z-index: 10;
   }
 ::-moz-placeholder{
-  color: $f-pink;
+  color: $back-f-pink;
   z-index: 10;
 }
 :-ms-input-placeholder{
-  color: $f-pink;
+  color: $back-f-pink;
   z-index: 10;
 }
 
 .linkButton {
- background: $trif;
- border: $trif 1px solid;
- border: 1px solid $trif;
- border-bottom: 2px solid $secg;
+ background: $g-cyan;
+ border: $g-cyan 1px solid;
+ border: 1px solid $g-cyan;
+ border-bottom: 2px solid $back-f-grey;
  color: #fff;
  height: 44px;
  width: 50px;
@@ -119,7 +130,7 @@ body {
 }
 .linkButton :hover{
  background: #fff;
- color: $trif;
+ color: $g-cyan;
 }
 @media screen and (max-width:800px) {
     @-ms-viewport {
