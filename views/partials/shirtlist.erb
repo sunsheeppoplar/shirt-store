@@ -1,16 +1,15 @@
 <%if shirts%>
-  <ul>
+  <ul class="shirt_list">
     <%shirts.each {|shirt|%>
     <li>
-      <div class="shirts_list">
+      <div class="each_shirt">
         <img class="list_image" src="<%=shirt.image%>">
         <a href="/shirts/<%=shirt.id%>">
         <h4>
-        <span class="shirt_brand"><%=shirt.brand%></span>
-        <span class="shirt_name"><%=shirt.name%></span>
+        <span class="shirt_brand"><%=shirt.brand%></span><span class="shirt_name"><%=shirt.name%></span>
         </h4>
         </a>
-        <span class="shirt_price"><%=shirt.price%></span>
+        <span class="shirt_price">$<%=shirt.price%></span>
       </div>
     </li>
   <%}%>
