@@ -1,0 +1,128 @@
+$l-grey: rgba(170, 170, 170, .8);
+$d-grey: rgba(130, 130, 130, .85);
+$grey: linear-gradient($l-grey, $d-grey);
+$white: rgba(255, 255, 255, 1);
+$l-pink: rgba(255, 200, 200, 1);
+$f-pink: rgba(140, 40, 10, 0.4);
+$margin: 5%;
+$font-s: 'Raleway', Futura, Verdana, arial, sans-serif;
+$primc: rgba(120, 250, 250, .5);
+$primf: rgba(240, 90, 190, 1);
+$primb: rgba(220, 60, 60, .05);
+$primg: rgba(180, 50, 50, .75);
+$tri1: rgba(30, 170, 230, .85);
+$tri2: rgba(20, 160, 220, .9);
+$trif: linear-gradient($tri1, $tri2);
+$tric: rgba(10, 120, 180, .95);
+$trib: rgba(182, 222, 182, .1);
+$secg: rgba(50, 215, 150, 1);
+$secG: rgba(20, 185, 120, 1);
+$secf: rgba(245, 245, 90, 1);
+$sec1: rgba(250, 235, 200, .222);
+$sec2: rgba(255, 245, 210, .18);
+$secb: linear-gradient($sec2, $sec1);
+
+* {
+    margin         : 0 auto;
+    padding        : 0;
+    border         : 0;
+    outline        : 0;
+    vertical-align : baseline;
+    background     : transparent;
+    font-size   : 1.15em;
+    font-family : $font-s;
+    -webkit-box-sizing : border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing    : border-box; /* Firefox, other Gecko */
+    box-sizing         : border-box; /* Opera/IE 8+ */
+}
+
+html { 
+  background: $grey;
+  font-family: $font-s;
+  margin: $margin auto;
+}
+
+header { 
+  margin: $margin;
+
+  ul { 
+    display: inline-block;
+    min-width: 90%;
+    }
+  
+}
+
+body {
+  background-color: $l-grey;
+  padding: 1%;
+
+  div {
+    align-self: auto;
+    flex-basis: auto;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   a, button, input {
+    color: $secg;
+    font-size: 1.1em;
+    padding: 1px;
+    text-decoration: blink;
+    cursor: pointer;
+    border: 0 solid transparent;
+    border-bottom: 1px solid $grey;
+   }
+   &:focus {
+    box-shadow: 0 0 10px $secg;
+    outline: 0;
+   }
+   a:hover, button:hover, input:hover {
+    box-shadow: 0 0 15px $secg;
+   }
+
+  input {
+    border: 1px solid $grey;
+    border-bottom: 3px solid $grey;
+  }
+}
+::-webkit-input-placeholder {
+  color: $f-pink;
+  z-index: 10;
+  }
+  :-moz-placeholder {
+  color: $f-pink;
+  z-index: 10;
+  }
+::-moz-placeholder{
+  color: $f-pink;
+  z-index: 10;
+}
+:-ms-input-placeholder{
+  color: $f-pink;
+  z-index: 10;
+}
+
+.linkButton {
+ background: $trif;
+ border: $trif 1px solid;
+ border: 1px solid $trif;
+ border-bottom: 2px solid $secg;
+ color: #fff;
+ height: 44px;
+ width: 50px;
+ min-height: 44px;
+ min-width: 50px;
+ max-height: 44px;
+ max-width: 50px;
+}
+.linkButton :hover{
+ background: #fff;
+ color: $trif;
+}
+@media screen and (max-width:800px) {
+    @-ms-viewport {
+        width:321px;
+    }
+}
