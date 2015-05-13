@@ -81,6 +81,14 @@ body {
   min-width: 140px;
   width: 140px; }
 
+.modal_shirt {
+  height: 140px;
+  max-height: 140px;
+  min-height: 140px;
+  max-width: 140px;
+  min-width: 140px;
+  width: 140px; }
+
 .linkButton {
   background: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
   border: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9)) 1px solid;
@@ -97,6 +105,22 @@ body {
 .linkButton :hover {
   background: white;
   color: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9)); }
+
+#modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+#content {
+  position: absolute;
+  background: rgba(240, 210, 210, 0.5);
+  border-radius: 14px;
+  top: 40%;
+  border: 3px #ffc8c8 solid;
+  padding: 20px; }
 
 @media screen and (max-width: 800px) {
   @-ms-viewport {
