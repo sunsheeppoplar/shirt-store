@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS shirts({
+CREATE TABLE IF NOT EXISTS shirts ({
   id INTEGER PRIMARY KEY,
   quantity INTEGER, 
   image TEXT,  
@@ -14,7 +14,7 @@ CREATE TRIGGER timestamp_update BEFORE UPDATE ON shirts BEGIN
   UPDATE shirts SET updated_at = CURRENT_TIMESTAMP WHERE id = new.id;
 END;
 
-CREATE TABLE IF NOT EXISTS users({
+CREATE TABLE IF NOT EXISTS users ({
   id INTEGER PRIMARY KEY,
   shirt_id INTEGER,
   name TEXT,

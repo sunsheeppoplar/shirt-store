@@ -1,4 +1,4 @@
-require_relative '..models/shirt'
+require_relative '../models/shirt'
 
 Shirt.create({
   quantity: 200,
