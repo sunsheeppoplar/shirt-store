@@ -39,6 +39,6 @@ post '/shirts' do
 end
 
 put '/shirts/:id' do
-  Shirt.update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
+  Shirt.find(params[:id].to_i).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
   redirtect("/shirts/#{params[:id]}/admin")
 end
