@@ -8,12 +8,13 @@ get '/' do
 end
 
 get '/shirts' do
-  shirts = Shirt.all.limit(10)
+  shirts = Shirt.all.limit(12)
   erb :index, locals: {shirts: shirts}
 end
 
 get '/shirts/search' do
-  shirts = Shirt.where("? like ?", params[:type], params[:search])
+  shirts = Shirt.where("#{params[:type]} like ?", "%#{params[:search]}%")
+  puts shirts
   erb :results, locals: {shirts: shirts}
 end
 

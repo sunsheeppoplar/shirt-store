@@ -15,7 +15,10 @@ CREATE TRIGGER timestamp_update BEFORE UPDATE ON shirts BEGIN
 END;
 
 CREATE TABLE IF NOT EXISTS users (
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffb6f97afb855c69c4762591f0e5523988f8b784
   id INTEGER PRIMARY KEY,
   shirt_id INTEGER,
   name TEXT,
