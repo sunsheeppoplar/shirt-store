@@ -13,4 +13,4 @@ The development narrative and iteration can be seen here on [Trello](https://tre
 3. [sinatra](http://www.sinatrarb.com/) server
 
 ## collaborators
-christopher (B)lack, pawel (F)ielek, raz (G)oldin abner (Y)ang
+christopher (B)lack, pawel (F)ielek, raz (G)oldin, abner (Y)ang
