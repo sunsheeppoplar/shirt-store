@@ -8,7 +8,7 @@ get '/' do
 end
 
 get '/shirts' do
-  shirts = Shirt.all.limit(10)
+  shirts = Shirt.all.limit(12)
   erb :index, locals: {shirts: shirts}
 end
 
