@@ -45,7 +45,7 @@ $sm-size: 12%;
     outline        : 0;
     vertical-align : baseline;
     background     : transparent;
-    font-size   : 1.15em;
+    font-size   : 1.1em;
     font-family : $s-font;
     color: $s-purp;
     -webkit-box-sizing : border-box; /* Safari/Chrome, other WebKit */
@@ -101,8 +101,8 @@ body {
     border-bottom: 3px solid $d-cyan;
     color: $white;
   }
-  h4 {
-    text-size:1em;
+  h3, h4 {
+    font-size: .8em;
   }
 }
 ::-webkit-input-placeholder {

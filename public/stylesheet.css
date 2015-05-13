@@ -11,7 +11,7 @@
   outline: 0;
   vertical-align: baseline;
   background: transparent;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-family: "Raleway", Futura, Verdana, arial, sans-serif;
   color: #f05abe;
   -webkit-box-sizing: border-box;
@@ -56,8 +56,8 @@ body {
     border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
     border-bottom: 3px solid rgba(20, 160, 220, 0.9);
     color: white; }
-  body h4 {
-    text-size: 1em; }
+  body h3, body h4 {
+    font-size: .8em; }
 
 ::-webkit-input-placeholder {
   color: rgba(120, 250, 250, 0.5);
