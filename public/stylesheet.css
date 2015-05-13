@@ -27,12 +27,8 @@ header {
     display: inline-block;
     min-width: 90%; }
 
-nav {
-  background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85)); }
-
 body {
-  background-color: rgba(200, 200, 200, 0.8);
-  padding: 1%; }
+  background-color: rgba(200, 200, 200, 0.8); }
   body div {
     align-self: auto;
     flex-basis: auto; }
@@ -48,16 +44,16 @@ body {
     border: 0 solid transparent;
     border-bottom: 1px solid linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
   body:focus {
-    box-shadow: 0 0 10px rgba(182, 222, 182, 0.1);
+    box-shadow: 0 0 10px rgba(10, 120, 180, 0.95);
     outline: 0; }
   body a:hover, body button:hover, body input:hover {
-    box-shadow: 0 0 15px rgba(182, 222, 182, 0.1); }
+    box-shadow: 0 0 15px rgba(10, 120, 180, 0.95); }
   body input {
     border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
     border-bottom: 3px solid rgba(20, 160, 220, 0.9);
     color: white; }
-  body h3, body h4 {
-    font-size: .8em; }
+  body h4 {
+    font-size: .5em; }
 
 ::-webkit-input-placeholder {
   color: rgba(120, 250, 250, 0.5);
@@ -75,15 +71,21 @@ body {
   color: rgba(120, 250, 250, 0.5);
   z-index: 10; }
 
-.list_image {
-  height: 12%;
-  max-height: 12%;
-  min-height: 12%;
-  max-width: 12%;
-  min-width: 12%;
-  width: 12%; }
+.shirt_list {
+  display: flex;
+  flex-wrap: wrap; }
 
-.modal_shirt {
+.each_shirt {
+  border: 2px rgba(140, 40, 10, 0.5);
+  background: linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
+
+.shirt_brand {
+  color: rgba(10, 120, 180, 0.95); }
+
+.shirt_price {
+  color: #14b978; }
+
+.list_image, .modal_shirt {
   height: 12%;
   max-height: 12%;
   min-height: 12%;
@@ -106,7 +108,30 @@ body {
 
 .linkButton :hover {
   background: white;
-  color: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9)); }
+  color: #14b978; }
+
+.update {
+  background: #f05abe;
+  color: white;
+  border: #f05abe; }
+
+#logo {
+  font-size: 1.5em;
+  float: left; }
+
+#header {
+  padding-bottom: 20px;
+  width: 100%; }
+  #header nav {
+    padding: 2px;
+    width: 100%;
+    padding-left: 10px;
+    background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85));
+    text-align: center;
+    text-shadow: 1px 1px rgba(10, 120, 180, 0.95); }
+    #header nav a {
+      padding: 0 20px;
+      box-shadow: 2px rgba(10, 120, 180, 0.95); }
 
 #modal {
   background: rgba(0, 0, 0, 0.5);
@@ -115,11 +140,6 @@ body {
   left: 0;
   top: 0;
   width: 100%; }
-
-.update {
-  background: #f05abe;
-  color: white;
-  border: #f05abe; }
 
 #content {
   position: absolute;

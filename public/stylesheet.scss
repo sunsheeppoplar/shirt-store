@@ -62,13 +62,9 @@ header {
     }  
 }
 
-nav {
-    background: $g-grey;
-  }
 
 body {
   background-color: $l-grey;
-  padding: 1%;
 
   div {
     align-self: auto;
@@ -89,11 +85,11 @@ body {
     border-bottom: 1px solid $grey;
    }
    &:focus {
-    box-shadow: 0 0 10px $back-f-grey;
+    box-shadow: 0 0 10px $blue-cyan;
     outline: 0;
    }
    a:hover, button:hover, input:hover {
-    box-shadow: 0 0 15px $back-f-grey;
+    box-shadow: 0 0 15px $blue-cyan;
    }
 
   input {
@@ -101,8 +97,8 @@ body {
     border-bottom: 3px solid $d-cyan;
     color: $white;
   }
-  h3, h4 {
-    font-size: .8em;
+  h4 {
+    font-size: .5em;
   }
 }
 ::-webkit-input-placeholder {
@@ -121,8 +117,24 @@ body {
   color: $back-cyan;
   z-index: 10;
 }
+.shirt_list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.list_image {
+.each_shirt {
+  border: 2px $back-f-pink;
+  background: $grey;
+}
+.shirt_brand {
+  color: $blue-cyan;
+}
+.shirt_name {
+}
+.shirt_price {
+  color: $d-green-cyan;
+}
+.list_image, .modal_shirt{
   height: $sm-size;
   max-height: $sm-size;
   min-height: $sm-size;
@@ -130,14 +142,7 @@ body {
   min-width: $sm-size;
   width: $sm-size;
 }
-.modal_shirt {
-  height: $sm-size;
-  max-height: $sm-size;
-  min-height: $sm-size;
-  max-width: $sm-size;
-  min-width: $sm-size;
-  width: $sm-size;
-}
+
 .linkButton {
  background: $g-cyan;
  border: $g-cyan 1px solid;
@@ -154,9 +159,38 @@ body {
 
 .linkButton :hover{
  background: $white;
- color: $g-cyan;
+ color: $d-green-cyan;
 }
 
+
+.update {
+  background: $s-purp;
+  color: $white;
+  border: $s-purp 
+}
+
+#logo {
+  font-size: 1.5em;
+  float: left;
+}
+#header {
+  padding-bottom: 20px;
+  width: 100%;
+
+  nav {
+    padding: 2px;
+    width: 100%;
+    padding-left: 10px;
+    background: $g-grey;
+    text-align: center;
+    text-shadow: 1px 1px $blue-cyan;
+    a {
+      padding: 0 20px;
+      box-shadow: 2px $blue-cyan;
+    }
+  }
+
+}
 #modal {
   background: rgba(0, 0, 0, .5);
   position: fixed;
@@ -166,11 +200,6 @@ body {
   width: 100%;
 }
 
-.update {
-  background: $s-purp;
-  color: $white;
-  border: $s-purp 
-}
 
 #content{
   position: absolute;
