@@ -59,19 +59,19 @@ body {
     color: white; }
 
 ::-webkit-input-placeholder {
-  color: rgba(140, 40, 10, 0.4);
+  color: rgba(120, 250, 250, 0.5);
   z-index: 10; }
 
 :-moz-placeholder {
-  color: rgba(140, 40, 10, 0.4);
+  color: rgba(120, 250, 250, 0.5);
   z-index: 10; }
 
 ::-moz-placeholder {
-  color: rgba(140, 40, 10, 0.4);
+  color: rgba(120, 250, 250, 0.5);
   z-index: 10; }
 
 :-ms-input-placeholder {
-  color: rgba(140, 40, 10, 0.4);
+  color: rgba(120, 250, 250, 0.5);
   z-index: 10; }
 
 .linkButton {
