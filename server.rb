@@ -13,7 +13,8 @@ get '/shirts' do
 end
 
 get '/shirts/search' do
-  shirts = Shirt.where("? like ?", params[:type], params[:search])
+  shirts = Shirt.where("#{params[:type]} like ?", "%#{params[:search]}%")
+  puts shirts
   erb :results, locals: {shirts: shirts}
 end
 
