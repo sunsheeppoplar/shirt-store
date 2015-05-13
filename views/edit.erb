@@ -1,0 +1,13 @@
+<% erb :partials/header%>
+<%=shirt.image%>
+<form action="/shirts/:id" method="POST">
+  <type="hidden" name="_method" value="PUT">
+  <type="text" name="name" value="<%=shirt.name%>">
+  <type="text" name="color" value="<%=shirt.color%>">
+  <type="number" name="quantity" value="<%=shirt.quantity%>">
+  <type="number" name="price" value="<%=shirt.price%>">
+  <type="text" name="image" value="<%=shirt.image%>">
+  <type="text" name="brand" value="<%=shirt.brand%>">
+  <type="submit" class="update" value="CONFIRM/UPDATE">
+</form>
+<% erb :partials/footer%>
