@@ -1,0 +1,23 @@
+<%erb :partials/header%>
+<main class="show_shirt">
+
+<type="hidden" name="_method" value="PUT">
+  <type="text" name="name" value="<%=shirt.name%>">
+  <type="text" name="color" value="<%=shirt.color%>">
+  <type="number" name="quantity" value="<%=shirt.quantity%>">
+  <type="number" name="price" value="<%=shirt.price%>">
+  <type="text" name="image" value="<%=shirt.image%>">
+  <type="text" name="brand" value="<%=shirt.brand%>">
+  <div class="show_shirt_inner">
+  <span class="shirt_name"><h2><%=shirt.name%></h2></span>
+  <span class="shirt_color"></span>
+  <img src="<%=shirt.image%>" class="show_shirt">
+
+
+  <modal class="buy_shirt">
+    
+  </modal>
+  </div>
+
+</main>
+<%erb :partials/footer%>
