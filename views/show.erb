@@ -1,22 +1,32 @@
 <%erb :partials/header%>
 <main class="show_shirt">
 
-<type="hidden" name="_method" value="PUT">
-  <type="text" name="name" value="<%=shirt.name%>">
-  <type="text" name="color" value="<%=shirt.color%>">
-  <type="number" name="quantity" value="<%=shirt.quantity%>">
-  <type="number" name="price" value="<%=shirt.price%>">
-  <type="text" name="image" value="<%=shirt.image%>">
-  <type="text" name="brand" value="<%=shirt.brand%>">
+ 
   <div class="show_shirt_inner">
   <span class="shirt_name"><h2><%=shirt.name%></h2></span>
-  <span class="shirt_color"></span>
+  <p><span class="shirt_color"><%=shirt.color%></span></p>
+  
+  <p><span class="shirt_brand"><%=shirt.brand%></span></p>
   <img src="<%=shirt.image%>" class="show_shirt">
-
-
+  <%if shirt.quantity<1%>
+  <div class="fake_button">BUY NOW</div>
+  <%else%>
+  <button class="buy_it">BUY NOW</button>
   <modal class="buy_shirt">
-    
+    <img class="modal_shirt" src="<%=shirt_image%>">
+    <form method="POST" action="/shirts/<%=shirt.id%>">
+      <input type="hidden" name="_method" value="PUT">
+      <select name="quantity">
+        <label>How many shirts do we want? (<%=shirt.quantity%> are left.)</label>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">3</option>
+        <option value="4">4</option>
+      </select>
+      <p><span class="shirt_brand modal"><%=shirt.brand%></span>
+      <span class="shirt_name modal"><%=shirt.name%></span></p>
   </modal>
+  <%end%>
   </div>
 
 </main>
