@@ -33,7 +33,10 @@ $yellow: rgba(245, 245, 90, 1);
 
 /* OTHER VARIABLES */
 $s-font: 'Raleway', Futura, Verdana, arial, sans-serif;
+
 $margin: 5%;
+
+$sm-size: 12%;
 
 * {
     margin         : 0 auto;
@@ -98,6 +101,9 @@ body {
     border-bottom: 3px solid $d-cyan;
     color: $white;
   }
+  h4 {
+    text-size:1em;
+  }
 }
 ::-webkit-input-placeholder {
   color: $back-cyan;
@@ -117,20 +123,20 @@ body {
 }
 
 .list_image {
-  height:140px;
-  max-height:140px;
-  min-height:140px;
-  max-width:140px;
-  min-width:140px;
-  width:140px;
+  height: $sm-size;
+  max-height: $sm-size;
+  min-height: $sm-size;
+  max-width: $sm-size;
+  min-width: $sm-size;
+  width: $sm-size;
 }
 .modal_shirt {
-  height:140px;
-  max-height:140px;
-  min-height:140px;
-  max-width:140px;
-  min-width:140px;
-  width:140px;
+  height: $sm-size;
+  max-height: $sm-size;
+  min-height: $sm-size;
+  max-width: $sm-size;
+  min-width: $sm-size;
+  width: $sm-size;
 }
 .linkButton {
  background: $g-cyan;
@@ -160,11 +166,17 @@ body {
   width: 100%;
 }
 
+.update {
+  background: $s-purp;
+  color: $white;
+  border: $s-purp 
+}
+
 #content{
   position: absolute;
   background: $back-pink;
   border-radius: 14px;
-  top: 40%;
+  top: 20%;
   border: 3px $l-pink solid;
   padding: 20px;
 }
