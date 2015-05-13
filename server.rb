@@ -38,10 +38,17 @@ post '/shirts' do
   redirect('/shirts/admin')
 end
 
+put '/shirts/:id/buy' do
+  Shirt.find(params[:id]).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
+  redirect("/shirts/#{params[:id]}/admin")
+end
+
 put '/shirts/:id' do
   Shirt.find(params[:id]).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
   redirect("/shirts/#{params[:id]}/admin")
 end
+
+
 
 delete '/shirts/:id' do
   shirt = Shirt.find(params[:id])
