@@ -23,7 +23,7 @@ get '/shirts/admin' do
   erb :admin, locals: {shirts: shirts}
 end
 
-get '/shirts/:id/admin/' do
+get '/shirts/:id/admin' do
   shirt = Shirt.find(params[:id])
   erb :edit, locals: {shirt: shirt}
 end

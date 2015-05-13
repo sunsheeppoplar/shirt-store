@@ -1,5 +1,4 @@
-<% erb :"partials/header"%>
-<%=shirt.image%>
+<%= erb :"partials/header" %>
 <form action="/shirts/:id" method="POST">
   <type="hidden" name="_method" value="PUT">
   <type="text" name="name" value="<%=shirt.name%>">
@@ -10,4 +9,4 @@
   <type="text" name="brand" value="<%=shirt.brand%>">
   <type="submit" class="update" value="CONFIRM/UPDATE">
 </form>
-<% erb :"partials/footer"%>
+<%= erb :"partials/footer" %>
