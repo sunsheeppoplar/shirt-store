@@ -1,9 +1,10 @@
-<%erb :partials/header%>
+<%= erb :"partials/header"%>
 <main class="show_shirt">
+
   <div class="show_shirt_inner">
   <span class="shirt_name"><h2><%=shirt.name%></h2></span>
   <p><span class="shirt_color"><%=shirt.color%></span></p>
-  
+
   <p><span class="shirt_brand"><%=shirt.brand%></span></p>
   <img src="<%=shirt.image%>" class="show_shirt">
   <%if shirt.quantity<1%>
@@ -11,7 +12,7 @@
   <%else%>
   <button class="buy_it">BUY NOW</button>
   <modal class="buy_shirt">
-    <img class="modal_shirt" src="<%=shirt_image%>">
+    <img class="modal_shirt" src="<%=shirt.image%>">
     <form method="POST" action="/shirts/<%=shirt.id%>">
       <input type="hidden" name="_method" value="PUT">
       <label>How many shirts do we want? (<%=shirt.quantity%> are left.)</label>
@@ -30,4 +31,4 @@
   </div>
 
 </main>
-<%erb :partials/footer%>
+<%= :"partials/footer"%>
