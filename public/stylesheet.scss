@@ -117,6 +117,15 @@ body {
   z-index: 10;
 }
 
+img .image_list {
+  height:140px;
+  max-height:140px;
+  min-height:140px;
+  max-width:140px;
+  min-width:140px;
+  width:140px;
+
+}
 .linkButton {
  background: $g-cyan;
  border: $g-cyan 1px solid;
