@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS shirts({
   name TEXT,
   price INTEGER,
   brand TEXT,
+  color TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   });
