@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-CREATE TABLE IF NOT EXISTS shirts ({
-=======
 CREATE TABLE IF NOT EXISTS shirts (
 >>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
@@ -18,9 +15,6 @@ CREATE TRIGGER timestamp_update BEFORE UPDATE ON shirts BEGIN
   UPDATE shirts SET updated_at = CURRENT_TIMESTAMP WHERE id = new.id;
 END;
 
-<<<<<<< HEAD
-CREATE TABLE IF NOT EXISTS users ({
-=======
 CREATE TABLE IF NOT EXISTS users (
 >>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
