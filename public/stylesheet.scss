@@ -168,7 +168,11 @@ body {
   border: 3px $l-pink solid;
   padding: 20px;
 }
-
+#close_it {
+  float:right;
+  position: relative;
+  display: inline-block;
+}
 @media screen and (max-width:800px) {
     @-ms-viewport {
         width:321px;

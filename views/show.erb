@@ -13,6 +13,7 @@
   <button class="buy_it">BUY NOW</button>
   <div class="modal" id="modal">
     <div id="content">
+    <button id="close_it">&cross;</button>
     <img class="modal_shirt" src="<%=shirt.image%>">
     <form method="POST" action="/shirts/<%=shirt.id%>/buy">
       <input type="hidden" name="_method" value="PUT">
@@ -26,7 +27,7 @@
       <input type="text" name="email" placeholder="mail@email.com">
       <input type="text" name="name" placeholder="Johnny Smith">
       <input type="text" name="image" placeholder="http://lorempixel.com">
-      <button class="buy_it">BUY</button>
+      <input type="submit" value="BUY IT">
       </form>
       <p><span class="shirt_brand modal"><%=shirt.brand%></span>
       <span class="shirt_name modal"><%=shirt.name%></span></p>
