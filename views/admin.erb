@@ -27,4 +27,15 @@
         <p> Sorry we don't have any T-shirts of that nature</p>
 
 <%end%>
+
+<form action="/shirts/" method="POST">
+  <input type="text" name="name" placeholder="t-1000">
+  <input type="text" name="color" placeholder="rainbow">
+  <input type="number" name="quantity" placeholder="1">
+  <input type="number" name="price" placeholder="88.34">
+  <input type="text" name="image" placeholder="http://www.tees2shop.info/products/1136535.png">
+  <input type="text" name="brand" value="BFGY">
+  <input type="submit" class="update" value="CONFIRM/UPDATE">
+</form>
+
 <%= erb :"partials/footer" %>
