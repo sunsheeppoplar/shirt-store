@@ -1,13 +1,13 @@
 <%= erb :"partials/header" %>
 <h1>hello</h1>
 <form action="/shirts/:id" method="POST">
-  <type="hidden" name="_method" value="PUT">
-  <type="text" name="name" value="<%=shirt.name%>">
-  <type="text" name="color" value="<%=shirt.color%>">
-  <type="number" name="quantity" value="<%=shirt.quantity%>">
-  <type="number" name="price" value="<%=shirt.price%>">
-  <type="text" name="image" value="<%=shirt.image%>">
-  <type="text" name="brand" value="<%=shirt.brand%>">
-  <type="submit" class="update" value="CONFIRM/UPDATE">
+  <input type="hidden" name="_method" value="PUT">
+  <input type="text" placeholder="shirt name" name="name" value="<%=shirt.name%>">
+  <input type="text" placeholder="shirt color" name="color" value="<%=shirt.color%>">
+  <input type="number" placeholder="shirt quantity" name="quantity" value="<%=shirt.quantity%>">
+  <input type="number" placeholder="shirt price" name="price" value="<%=shirt.price%>">
+  <input type="text" placeholder="shirt image" name="image" value="<%=shirt.image%>">
+  <input type="text" placeholder="shirt brand" name="brand" value="<%=shirt.brand%>">
+  <input type="submit" class="update" value="CONFIRM/UPDATE">
 </form>
 <%= erb :"partials/footer" %>
