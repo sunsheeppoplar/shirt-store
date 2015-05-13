@@ -14,8 +14,11 @@ The development narrative and iteration can be seen here on [Trello](https://tre
 
 ## collaborators
 [(B)lack, Christopher](https://github.com/huckpilot)
+
 [(F)ielek, Pawel](https://github.com/polskais1/)
+
 [(G)oldin, Raz](https://github.com/zargold)
+
 [(Y)ang, Abner](https://github.com/sunsheeppoplar)
 
 
