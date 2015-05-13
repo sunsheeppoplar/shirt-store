@@ -4,6 +4,15 @@
   <title>ShirtStore</title>
 </head>
 <body>
+ <div id="header">
+ <nav class="navBar">
+  <a href="/">SHIRTIFY</a>
+  <a href="/users">Users</a>
+  <a href="/admin">Admin</a>
+  <a href="/shirts/cart">Cart</a>
+  <a href="/contact">Contact</a>
+ </nav>
+  <h3> Find a shirt</h3>
 <form action="/shirts/search" method="GET">
   <input type="text" placeholder="Cool Brand Bro Ts" name="brand">
   <input type="text" placeholder="I'm better than you-Red" name="name">
@@ -12,5 +21,8 @@
   <input type="number" placeholder="2533" name="id">
   <input type="submit" class="search-icon">
 </form>
+  </div>
+
+
 </body>
 </html>
