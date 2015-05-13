@@ -1,6 +1,6 @@
 <%= erb :"partials/header" %>
 <h1>hello</h1>
-<form action="/shirts/:id" method="POST">
+<form action="/shirts/<%= shirt.id %>" method="POST">
   <input type="hidden" name="_method" value="PUT">
   <input type="text" placeholder="shirt name" name="name" value="<%=shirt.name%>">
   <input type="text" placeholder="shirt color" name="color" value="<%=shirt.color%>">
