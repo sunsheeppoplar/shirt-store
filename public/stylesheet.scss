@@ -102,7 +102,7 @@ body {
     color: $white;
   }
   h3, h4 {
-    font-size: .8em;
+    font-size: .5em;
   }
 }
 ::-webkit-input-placeholder {
@@ -121,8 +121,24 @@ body {
   color: $back-cyan;
   z-index: 10;
 }
+.shirt_list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.list_image {
+.each_shirt {
+  border: 2px $back-f-pink;
+  background: $grey;
+}
+.shirt_brand {
+  color: $blue-cyan;
+}
+.shirt_name {
+}
+.shirt_price {
+  color: $d-green-cyan;
+}
+.list_image, .modal_shirt{
   height: $sm-size;
   max-height: $sm-size;
   min-height: $sm-size;
@@ -130,14 +146,7 @@ body {
   min-width: $sm-size;
   width: $sm-size;
 }
-.modal_shirt {
-  height: $sm-size;
-  max-height: $sm-size;
-  min-height: $sm-size;
-  max-width: $sm-size;
-  min-width: $sm-size;
-  width: $sm-size;
-}
+
 .linkButton {
  background: $g-cyan;
  border: $g-cyan 1px solid;
@@ -154,7 +163,14 @@ body {
 
 .linkButton :hover{
  background: $white;
- color: $g-cyan;
+ color: $d-green-cyan;
+}
+
+
+.update {
+  background: $s-purp;
+  color: $white;
+  border: $s-purp 
 }
 
 #modal {
@@ -166,11 +182,6 @@ body {
   width: 100%;
 }
 
-.update {
-  background: $s-purp;
-  color: $white;
-  border: $s-purp 
-}
 
 #content{
   position: absolute;
