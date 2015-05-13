@@ -14,7 +14,7 @@
   <div class="modal" id="modal">
     <div id="content">
     <img class="modal_shirt" src="<%=shirt.image%>">
-    <form method="POST" action="/shirts/<%=shirt.id%>">
+    <form method="POST" action="/shirts/<%=shirt.id%>/buy">
       <input type="hidden" name="_method" value="PUT">
       <label>How many shirts do we want? (<%=shirt.quantity%> are left.)</label>
       <select name="quantity">
@@ -23,6 +23,9 @@
         <option value="2">3</option>
         <option value="4">4</option>
       </select>
+      <input type="text" name="email" placeholder="mail@email.com">
+      <input type="text" name="name" placeholder="Johnny Smith">
+      <input type="text" name="image" placeholder="http://lorempixel.com">
       <button class="buy_it">BUY</button>
       </form>
       <p><span class="shirt_brand modal"><%=shirt.brand%></span>

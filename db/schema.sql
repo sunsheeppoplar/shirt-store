@@ -18,6 +18,9 @@ CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY,
   shirt_id INTEGER,
   name TEXT,
+  email TEXT,
+  image TEXT,
+  shirts_purchased INTEGER,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   );
