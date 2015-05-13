@@ -34,6 +34,7 @@ $yellow: rgba(245, 245, 90, 1);
 /* OTHER VARIABLES */
 $s-font: 'Raleway', Futura, Verdana, arial, sans-serif;
 $margin: 5%;
+
 * {
     margin         : 0 auto;
     padding        : 0;
@@ -78,7 +79,7 @@ body {
     flex-wrap: wrap;
   }
    a, button, input {
-    color: $back-f-grey;
+    color: $d-green-cyan;
     font-size: 1.1em;
     padding: 1px;
     text-decoration: blink;
@@ -117,21 +118,20 @@ body {
   z-index: 10;
 }
 
-img .list_image {
+.list_image {
   height:140px;
   max-height:140px;
   min-height:140px;
   max-width:140px;
   min-width:140px;
   width:140px;
-
 }
 .linkButton {
  background: $g-cyan;
  border: $g-cyan 1px solid;
  border: 1px solid $g-cyan;
  border-bottom: 2px solid $back-f-grey;
- color: #fff;
+ color: $white;
  height: 44px;
  width: 50px;
  min-height: 44px;
@@ -141,7 +141,7 @@ img .list_image {
 }
 
 .linkButton :hover{
- background: #fff;
+ background: $white;
  color: $g-cyan;
 }
 
