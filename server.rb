@@ -30,12 +30,10 @@ get '/shirts/:id/admin' do
   erb :edit, locals: {shirt: shirt}
 end
 
-
 get '/shirts/:id' do
   shirt = Shirt.find(params[:id])
   erb :show, locals: {shirt: shirt}
 end
-
 
 post '/shirts' do
   Shirt.create({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
@@ -44,7 +42,7 @@ end
 
 put '/shirts/:id/buy' do
   shirt = Shirt.find(params[:id].to_i)
-  if shirt.quantity.to_i > params[:quantity].to_i
+  if shirt.quantity.to_i >= params[:quantity].to_i
     shirt.update({:quantity => shirt.quantity.to_i-params[:quantity].to_i})
     users = User.all
     if !users.find_by({:email => params[:email]})
@@ -53,7 +51,7 @@ put '/shirts/:id/buy' do
     user = User.find_by({:email => params[:email]})
     erb :confirmation, locals: {user: user}
   else
-    redirect("/shirts/:id")
+    erb :error, locals: {message: "We're restocking, check back soon!"}
   end
 end
 
@@ -61,8 +59,6 @@ put '/shirts/:id' do
   Shirt.find(params[:id]).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
   redirect("/shirts/#{params[:id]}/admin")
 end
-
-
 
 delete '/shirts/:id' do
   shirt = Shirt.find(params[:id])
