@@ -7,9 +7,9 @@ The development narrative and iteration can be seen here on [Trello](https://tre
 
 
 ## tools of the trade
-**[forkable](https://github.com/polskais1/shirt-store)
-**[sublime](http://www.sublimetext.com/) and [vim](http://www.vim.org/) are our editors of choice
-**[sinatra](http://www.sinatrarb.com/) server
++[forkable](https://github.com/polskais1/shirt-store)
++[sublime](http://www.sublimetext.com/) and [vim](http://www.vim.org/) are our editors of choice
++[sinatra](http://www.sinatrarb.com/) server
 
 ## collaborators
 christopher (B)lack, pawel (F)ielek, raz (G)oldin abner (Y)ang
