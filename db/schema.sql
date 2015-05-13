@@ -1,5 +1,4 @@
 CREATE TABLE IF NOT EXISTS shirts (
->>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
   quantity INTEGER,
   image TEXT,
@@ -16,7 +15,6 @@ CREATE TRIGGER timestamp_update BEFORE UPDATE ON shirts BEGIN
 END;
 
 CREATE TABLE IF NOT EXISTS users (
->>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
   shirt_id INTEGER,
   name TEXT,
