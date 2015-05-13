@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pry'
 require_relative 'models/shirt'
 
 set :partial_template_engine, :erb
@@ -39,8 +40,16 @@ post '/shirts' do
 end
 
 put '/shirts/:id/buy' do
-  Shirt.find(params[:id]).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
-  redirect("/shirts/#{params[:id]}/admin")
+  shirt = Shirt.find(params[:id])
+  if shirt.quantity > params[:quantity].to_i
+    shirt.update({:quantity => shirt.quantity-params[:quantity].to_i})
+    redirect("/shirts/confirmation")
+  else
+    redirect("/shirts/:id")
+  end # end if 
+  binding.pry
+  #params[:quantity]
+  
 end
 
 put '/shirts/:id' do
