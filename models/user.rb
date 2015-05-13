@@ -1,4 +1,4 @@
 require_relative '../lib/connections'
 
-class User
+class User < ActiveRecord::Base
 end
