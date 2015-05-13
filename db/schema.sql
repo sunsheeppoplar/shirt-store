@@ -1,26 +1,34 @@
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS shirts ({
+=======
+CREATE TABLE IF NOT EXISTS shirts (
+>>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
-  quantity INTEGER, 
-  image TEXT,  
+  quantity INTEGER,
+  image TEXT,
   name TEXT,
   price INTEGER,
   brand TEXT,
   color TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-  });
+  );
 
 CREATE TRIGGER timestamp_update BEFORE UPDATE ON shirts BEGIN
   UPDATE shirts SET updated_at = CURRENT_TIMESTAMP WHERE id = new.id;
 END;
 
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS users ({
+=======
+CREATE TABLE IF NOT EXISTS users (
+>>>>>>> 09bcb7f17fa6395d8c857fa251c925f90d6a55a3
   id INTEGER PRIMARY KEY,
   shirt_id INTEGER,
   name TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-  });
+  );
 
 CREATE TRIGGER timestamp_user_update BEFORE UPDATE ON users BEGIN
   UPDATE users SET updated_at = CURRENT_TIMESTAMP WHERE id = new.id;
