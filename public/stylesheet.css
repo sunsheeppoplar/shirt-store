@@ -21,16 +21,14 @@
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
 
-html {
-  background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(150, 150, 150, 0.85));
-  font-family: "Raleway", Futura, Verdana, arial, sans-serif;
-  margin: 5% auto; }
-
 header {
   margin: 5%; }
   header ul {
     display: inline-block;
     min-width: 90%; }
+
+nav {
+  background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85)); }
 
 body {
   background-color: rgba(200, 200, 200, 0.8);
@@ -48,7 +46,7 @@ body {
     text-decoration: blink;
     cursor: pointer;
     border: 0 solid transparent;
-    border-bottom: 1px solid linear-gradient(rgba(200, 200, 200, 0.8), rgba(150, 150, 150, 0.85)); }
+    border-bottom: 1px solid linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
   body:focus {
     box-shadow: 0 0 10px rgba(182, 222, 182, 0.1);
     outline: 0; }
