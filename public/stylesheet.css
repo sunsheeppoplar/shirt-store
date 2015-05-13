@@ -1,0 +1,91 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 1.15em;
+  font-family: "Raleway", Futura, Verdana, arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+html {
+  background: linear-gradient(rgba(170, 170, 170, 0.8), rgba(130, 130, 130, 0.85));
+  font-family: "Raleway", Futura, Verdana, arial, sans-serif;
+  margin: 5% auto; }
+
+header {
+  margin: 5%; }
+  header ul {
+    display: inline-block;
+    min-width: 90%; }
+
+body {
+  background-color: rgba(170, 170, 170, 0.8);
+  padding: 1%; }
+  body div {
+    align-self: auto;
+    flex-basis: auto; }
+  body li {
+    display: flex;
+    flex-wrap: wrap; }
+  body a, body button, body input {
+    color: #32d796;
+    font-size: 1.1em;
+    padding: 1px;
+    text-decoration: blink;
+    cursor: pointer;
+    border: 0 solid transparent;
+    border-bottom: 1px solid linear-gradient(rgba(170, 170, 170, 0.8), rgba(130, 130, 130, 0.85)); }
+  body:focus {
+    box-shadow: 0 0 10px #32d796;
+    outline: 0; }
+  body a:hover, body button:hover, body input:hover {
+    box-shadow: 0 0 15px #32d796; }
+  body input {
+    border: 1px solid linear-gradient(rgba(170, 170, 170, 0.8), rgba(130, 130, 130, 0.85));
+    border-bottom: 3px solid linear-gradient(rgba(170, 170, 170, 0.8), rgba(130, 130, 130, 0.85)); }
+
+::-webkit-input-placeholder {
+  color: rgba(140, 40, 10, 0.4);
+  z-index: 10; }
+
+:-moz-placeholder {
+  color: rgba(140, 40, 10, 0.4);
+  z-index: 10; }
+
+::-moz-placeholder {
+  color: rgba(140, 40, 10, 0.4);
+  z-index: 10; }
+
+:-ms-input-placeholder {
+  color: rgba(140, 40, 10, 0.4);
+  z-index: 10; }
+
+.linkButton {
+  background: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
+  border: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9)) 1px solid;
+  border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
+  border-bottom: 2px solid #32d796;
+  color: #fff;
+  height: 44px;
+  width: 50px;
+  min-height: 44px;
+  min-width: 50px;
+  max-height: 44px;
+  max-width: 50px; }
+
+.linkButton :hover {
+  background: #fff;
+  color: linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9)); }
+
+@media screen and (max-width: 800px) {
+  @-ms-viewport {
+    width: 321px; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

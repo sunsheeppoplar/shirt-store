@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>ShirtStore</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css.map">
+<link rel="stylesheet" type="text/css" href="stylesheet.scss">
 </head>
 <body>
  <div id="header">
@@ -13,12 +16,24 @@
   <a href="/contact">Contact</a>
  </nav>
   <h3> Find a shirt</h3>
-<form action="/shirts/search" method="GET">
+<form action = "/shirts/search" method = "GET">
+  <input type="text" placeholder="search" name="search">
+  <select>
+    <option value = "brand">brand</option>
+    <option value = "name">name</option>
+    <option value = "color">color</option>
+    <option value = "price">price</option>
+    <option value = "id">id</option>
+  </select>
+  <button>Search</button>
+</form>
+
+<!-- <form action="/shirts/search" method="GET">
   <input type="text" placeholder="Cool Brand Bro Ts" name="brand">
   <input type="text" placeholder="I'm better than you-Red" name="name">
   <input type="text" placeholder="blanched-almond" name="color">
   <input type="number" placeholder="$37.00" name="price">
   <input type="number" placeholder="2533" name="id">
   <input type="submit" class="search-icon">
-</form>
+</form> -->
 </div>
