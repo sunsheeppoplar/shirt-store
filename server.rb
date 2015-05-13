@@ -1,4 +1,8 @@
 require 'sinatra'
+require 'sinatra/partial'
+require_relative 'models/shirt'
+
+set :partial_template_engine, :erb
 
 get '/' do
   redirect('/shirts')
@@ -6,6 +10,7 @@ end
 
 get '/shirts' do
   shirts = Shirt.all.limit(10)
+  puts shirts
   erb :index, locals: {shirts: shirts}
 end
 
