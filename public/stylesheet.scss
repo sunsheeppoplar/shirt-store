@@ -9,7 +9,7 @@ $back-l-grey: rgba(250, 235, 200, .222);
 $back-d-grey: rgba(255, 245, 210, .18);
 $g-grey: linear-gradient($back-l-grey, $back-d-grey);
 
-
+/*PINK COLORS */
 $l-pink: rgba(255, 200, 200, 1);
 $back-f-pink: rgba(140, 40, 10, 0.4);
 $s-purp: rgba(240, 90, 190, 1);
@@ -94,8 +94,9 @@ body {
    }
 
   input {
-    border: 1px solid $grey;
-    border-bottom: 3px solid $grey;
+    border: 1px solid $g-cyan;
+    border-bottom: 3px solid $d-cyan;
+    color: $white;
   }
 }
 ::-webkit-input-placeholder {
@@ -128,10 +129,12 @@ body {
  max-height: 44px;
  max-width: 50px;
 }
+
 .linkButton :hover{
  background: #fff;
  color: $g-cyan;
 }
+
 @media screen and (max-width:800px) {
     @-ms-viewport {
         width:321px;

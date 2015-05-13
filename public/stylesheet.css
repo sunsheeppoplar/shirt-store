@@ -1,5 +1,6 @@
 /* ALL COLORS */
 /* GREY COLORS */
+/*PINK COLORS */
 /* CYAN COLORS */
 /* OTHER COLORS */
 /* OTHER VARIABLES */
@@ -53,8 +54,9 @@ body {
   body a:hover, body button:hover, body input:hover {
     box-shadow: 0 0 15px rgba(182, 222, 182, 0.1); }
   body input {
-    border: 1px solid linear-gradient(rgba(200, 200, 200, 0.8), rgba(150, 150, 150, 0.85));
-    border-bottom: 3px solid linear-gradient(rgba(200, 200, 200, 0.8), rgba(150, 150, 150, 0.85)); }
+    border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
+    border-bottom: 3px solid rgba(20, 160, 220, 0.9);
+    color: white; }
 
 ::-webkit-input-placeholder {
   color: rgba(140, 40, 10, 0.4);
