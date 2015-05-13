@@ -1,6 +1,6 @@
 <%if shirts%>
   <ul>
-    <%=shirts.each {|shirt|%>
+    <%shirts.each {|shirt|%>
     <li>
       <div class="shirts_list">
         <img src="<%=shirt.image%>">
@@ -13,10 +13,12 @@
         <span class="shirt_price"><%=shirt.price%></span>
       </div>
     </li>
-    <%}%>
+  <%}%>
+  </ul>
     <%else%>
     <div class="wrong">
         <img class="sorry" src="#">
         <p> Sorry we don't have any T-shirts of that nature</p>
+    </div>
 
 <%end%>

@@ -1,4 +1,7 @@
 require 'sinatra'
+require_relative 'models/shirt'
+
+set :partial_template_engine, :erb
 
 get '/' do
   redirect('/shirts')

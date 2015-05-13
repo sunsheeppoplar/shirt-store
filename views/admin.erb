@@ -1,7 +1,7 @@
-<%erb :partials/header%>
+<%= erb :"partials/header" %>
 <%if shirts%>
   <ul>
-    <%=shirts.each {|shirt|%>
+    <%shirts.each {|shirt|%>
     <li>
       <div class="shirts_list">
         <img src="<%=shirt.image%>">
@@ -12,18 +12,19 @@
         </h4>
         </a>
         <span class="shirt_price"><%=shirt.price%></span>
-        <a class="linkbutton" href="/shirts/<%=shirts.id%>/admin">EDIT </a>
+        <a class="linkbutton" href="/shirts/<%=shirt.id%>/admin">EDIT</a>
         <form method="POST" action="/shirts/<%=shirt.id%>">
             <input type="hidden" name="_method" value="DELETE">
             <input type="submit" value="DELETE">
         </form>
       </div>
     </li>
-    <%}%>
+  <%}%>
+  </ul>
     <%else%>
     <div class="wrong">
         <img class="sorry" src="#">
         <p> Sorry we don't have any T-shirts of that nature</p>
 
 <%end%>
-<% erb :partials/footer%>
+<%= erb :"partials/footer" %>
