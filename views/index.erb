@@ -1,3 +1,25 @@
-<% erb :partials/header%>
-<% erb :partials/shirtlist%>
-<% erb :partials/footer%>
+<%= erb :"partials/header" %>
+<%if shirts%>
+  <ul>
+    <%shirts.each {|shirt|%>
+    <li>
+      <div class="shirts_list">
+        <img src="<%=shirt.image%>">
+        <a href="/shirts/<%=shirt.id%>">
+        <h4>
+        <span class="shirt_brand"><%=shirt.brand%></span>
+        <span class="shirt_name"><%=shirt.name%></span>
+        </h4>
+        </a>
+        <span class="shirt_price"><%=shirt.price%></span>
+      </div>
+    </li>
+    <%}%>
+    <%else%>
+    <div class="wrong">
+        <img class="sorry" src="#">
+        <p> Sorry we don't have any T-shirts of that nature</p>
+
+<%end%>
+
+<%= erb :"partials/footer" %>
