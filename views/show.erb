@@ -6,12 +6,13 @@
   <p><span class="shirt_color"><%=shirt.color%></span></p>
 
   <p><span class="shirt_brand"><%=shirt.brand%></span></p>
-  <img src="<%=shirt.image%>" class="show_shirt">
+  <img src="<%=shirt.image%>" class="show_image">
   <%if shirt.quantity<1%>
   <div class="fake_button">BUY NOW</div>
   <%else%>
   <button class="buy_it">BUY NOW</button>
-  <modal class="buy_shirt">
+  <div class="modal" id="modal">
+    <div id="content">
     <img class="modal_shirt" src="<%=shirt.image%>">
     <form method="POST" action="/shirts/<%=shirt.id%>">
       <input type="hidden" name="_method" value="PUT">
@@ -26,7 +27,8 @@
       </form>
       <p><span class="shirt_brand modal"><%=shirt.brand%></span>
       <span class="shirt_name modal"><%=shirt.name%></span></p>
-  </modal>
+      </div>
+  </div>
   <%end%>
   </div>
 

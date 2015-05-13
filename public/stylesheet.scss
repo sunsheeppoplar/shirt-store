@@ -11,9 +11,9 @@ $grey: linear-gradient($back-l-grey, $back-d-grey);
 
 /*PINK COLORS */
 $l-pink: rgba(255, 200, 200, 1);
-$back-f-pink: rgba(140, 40, 10, 0.4);
+$back-f-pink: rgba(140, 40, 10, 0.5);
 $s-purp: rgba(240, 90, 190, 1);
-$back-pink: rgba(220, 60, 60, .05);
+$back-pink: rgba(240, 210, 210, .5);
 $full-pink: rgba(180, 50, 50, .75);
 
 /* CYAN COLORS */
@@ -124,6 +124,14 @@ body {
   min-width:140px;
   width:140px;
 }
+.modal_shirt {
+  height:140px;
+  max-height:140px;
+  min-height:140px;
+  max-width:140px;
+  min-width:140px;
+  width:140px;
+}
 .linkButton {
  background: $g-cyan;
  border: $g-cyan 1px solid;
@@ -141,6 +149,24 @@ body {
 .linkButton :hover{
  background: $white;
  color: $g-cyan;
+}
+
+#modal {
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#content{
+  position: absolute;
+  background: $back-pink;
+  border-radius: 14px;
+  top: 40%;
+  border: 3px $l-pink solid;
+  padding: 20px;
 }
 
 @media screen and (max-width:800px) {
