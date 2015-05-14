@@ -1,7 +1,7 @@
 /* ALL COLORS */
 
 /* GREY COLORS */
-$l-grey: rgba(200, 200, 200, .8);
+$l-grey: rgba(210, 210, 210, .75);
 $d-grey: rgba(180, 180, 180, .85);
 $g-grey: linear-gradient($l-grey, $d-grey);
 $back-f-grey: rgba(182, 222, 182, .1);
@@ -132,7 +132,9 @@ body {
   }
 
   h4 {
-    font-size: .5em;
+    font-size: .75em;
+    padding: 5px;
+    margin: 10px;
   }
   h2 {
     font-size: 1.45em;
@@ -179,6 +181,9 @@ footer{
 }
 .shirt_brand {
   color: $blue-cyan;
+  padding: 0 5px 8px 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 .shirt_name {
 }

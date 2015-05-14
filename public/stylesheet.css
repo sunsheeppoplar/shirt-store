@@ -29,7 +29,7 @@ header {
     min-width: 90%; }
 
 body {
-  background-color: rgba(200, 200, 200, 0.8); }
+  background-color: rgba(210, 210, 210, 0.75); }
   body div {
     align-self: auto;
     flex-basis: auto; }
@@ -75,7 +75,9 @@ body {
     border-bottom: 4px solid rgba(40, 120, 40, 0.9);
     padding: 5px; }
   body h4 {
-    font-size: .5em; }
+    font-size: .75em;
+    padding: 5px;
+    margin: 10px; }
   body h2 {
     font-size: 1.45em;
     padding: 0 20px; }
@@ -116,7 +118,10 @@ footer {
   background: linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
 
 .shirt_brand {
-  color: rgba(10, 120, 180, 0.95); }
+  color: rgba(10, 120, 180, 0.95);
+  padding: 0 5px 8px 0;
+  margin-right: 5px;
+  margin-bottom: 5px; }
 
 .shirt_price {
   color: #14b978; }
@@ -164,7 +169,7 @@ footer {
     width: 100%;
     height: 50px;
     padding-left: 10px;
-    background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85)); }
+    background: linear-gradient(rgba(210, 210, 210, 0.75), rgba(180, 180, 180, 0.85)); }
     #header nav .link {
       text-align: center;
       padding-right: 105px; }
