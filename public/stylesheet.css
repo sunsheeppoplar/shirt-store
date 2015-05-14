@@ -4,6 +4,7 @@
 /* CYAN COLORS */
 /* OTHER COLORS */
 /* OTHER VARIABLES */
+/* BUTTON SIZES */
 * {
   margin: 0 auto;
   padding: 0;
@@ -41,9 +42,10 @@ body {
   body a, body button, body input {
     color: #14b978;
     font-size: 1.1em;
-    padding: 1px;
+    padding: 3px;
     text-decoration: blink;
     cursor: pointer;
+    line-height: 1.1em;
     border: 0 solid transparent;
     border-bottom: 1px solid linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
   body:focus {
@@ -57,6 +59,21 @@ body {
     border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
     border-bottom: 3px solid rgba(20, 160, 220, 0.9);
     color: rgba(20, 160, 220, 0.9); }
+  body [type=submit] {
+    background: linear-gradient(#f05abe, #d741a5);
+    border: linear-gradient(#f05abe, #d741a5) 3px solid;
+    border-bottom: 5px solid rgba(140, 40, 10, 0.5);
+    line-height: 1.1em;
+    color: white;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px; }
+  body button {
+    background: linear-gradient(#32d796, #14b978);
+    color: white;
+    border: 2px solid linear-gradient(#32d796, #14b978);
+    border-bottom: 4px solid rgba(40, 120, 40, 0.9);
+    padding: 5px; }
   body h4 {
     font-size: .5em; }
   body h2 {
@@ -70,19 +87,19 @@ footer {
   bottom: 0; }
 
 ::-webkit-input-placeholder {
-  color: rgba(60, 190, 190, 0.5);
+  color: rgba(60, 190, 190, 0.7);
   z-index: 10; }
 
 :-moz-placeholder {
-  color: rgba(60, 190, 190, 0.5);
+  color: rgba(60, 190, 190, 0.7);
   z-index: 10; }
 
 ::-moz-placeholder {
-  color: rgba(60, 190, 190, 0.5);
+  color: rgba(60, 190, 190, 0.7);
   z-index: 10; }
 
 :-ms-input-placeholder {
-  color: rgba(60, 190, 190, 0.5);
+  color: rgba(60, 190, 190, 0.7);
   z-index: 10; }
 
 .shirt_list {
@@ -90,7 +107,7 @@ footer {
   flex-wrap: wrap; }
   .shirt_list li {
     width: 20%;
-    height: 300px; }
+    height: 400px; }
   .shirt_list .list_image {
     width: 100%; }
 
@@ -122,17 +139,14 @@ footer {
   width: 50px;
   min-height: 44px;
   min-width: 50px;
-  max-height: 44px;
-  max-width: 50px; }
+  max-height: 50px;
+  max-width: 60px;
+  padding: 2px;
+  padding-bottom: 10px; }
 
 .linkButton :hover {
   background: white;
   color: #14b978; }
-
-.update {
-  background: #f05abe;
-  color: white;
-  border: #f05abe; }
 
 .add_shirt {
   padding: 20px; }
@@ -159,7 +173,7 @@ footer {
         box-shadow: 3px rgba(10, 120, 180, 0.95); }
 
 #search_form {
-  padding-left: 450px;
+  padding-left: 38%;
   padding-top: 20px; }
 
 #modal {
