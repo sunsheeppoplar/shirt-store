@@ -5,8 +5,8 @@ require_relative 'models/user'
 
 set :partial_template_engine, :erb
 
-get '/' do
-  redirect('/shirts')
+get "/" do
+  redirect("/shirts")
 end
 
 get '/shirts' do
@@ -57,7 +57,7 @@ end
 
 put '/shirts/:id' do
   Shirt.find(params[:id]).update({:quantity => params[:quantity], :image => params[:image], :name => params[:name], :price => params[:price], :brand => params[:brand], :color => params[:color]})
-  redirect("/shirts/#{params[:id]}/admin")
+  redirect("/shirts/admin")
 end
 
 delete '/shirts/:id' do
