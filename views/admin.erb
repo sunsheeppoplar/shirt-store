@@ -1,16 +1,16 @@
 <%= erb :"partials/header" %>
 <h2>Add a shirt</h2>
-<form action="/shirts" method="POST">
+<form class="add_shirt" action="/shirts" method="POST">
   <input type="text" name="name" placeholder="t-1000">
   <input type="text" name="color" placeholder="rainbow">
   <input type="number" name="quantity" placeholder="1">
   <input type="number" name="price" placeholder="88">
   <input type="text" name="image" placeholder="Add shirt url">
-  <input type="text" name="brand" value="BFGY">
+  <input type="text" name="brand" placeholder="BFGY">
   <input type="submit" class="update" value="CONFIRM/UPDATE">
 </form>
 <%if shirts%>
-  <ul>
+  <ul class="shirt_list">
     <%shirts.each {|shirt|%>
     <li>
       <div class="shirts_list">
@@ -22,7 +22,7 @@
         </h4>
         </a>
         <span class="shirt_price"><%=shirt.price%></span>
-        <a class="linkbutton" href="/shirts/<%=shirt.id%>/admin">EDIT</a>
+        <a class="linkButton" href="/shirts/<%=shirt.id%>/admin">EDIT</a>
         <form method="POST" action="/shirts/<%=shirt.id%>">
             <input type="hidden" name="_method" value="DELETE">
             <input type="submit" value="DELETE">

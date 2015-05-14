@@ -8,16 +8,17 @@
 </head>
 <body>
  <div id="header">
+  <a href="/" id="logo">kualaT</a>
   <nav class="navBar">
-    <a href="/" id="logo">kualaT</a>
+    <div class="link">
     <a href="/users">Users</a>
     <a href="/shirts/admin">Admin</a>
     <a href="/shirts/cart">Cart</a>
     <a href="/contact">Contact</a>
+    </div>
   </nav>
-  <h3> Find a shirt</h3>
-<form action = "/shirts/search" method = "GET">
-  <input type="text" placeholder="search" name="search">
+<form id="search_form" action = "/shirts/search" method = "GET">
+  <input type="text" placeholder="Find a Shirt!" name="search">
   <select name="type">
     <option value = "brand">brand</option>
     <option value = "name">name</option>
@@ -27,13 +28,4 @@
   </select>
   <button>Search</button>
 </form>
-
-<!-- <form action="/shirts/search" method="GET">
-  <input type="text" placeholder="Cool Brand Bro Ts" name="brand">
-  <input type="text" placeholder="I'm better than you-Red" name="name">
-  <input type="text" placeholder="blanched-almond" name="color">
-  <input type="number" placeholder="$37.00" name="price">
-  <input type="number" placeholder="2533" name="id">
-  <input type="submit" class="search-icon">
-</form> -->
 </div>

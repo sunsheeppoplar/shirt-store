@@ -35,6 +35,9 @@ body {
   body li {
     display: flex;
     flex-wrap: wrap; }
+  body img {
+    max-width: 80%;
+    max-height: 80%; }
   body a, body button, body input {
     color: #14b978;
     font-size: 1.1em;
@@ -44,36 +47,52 @@ body {
     border: 0 solid transparent;
     border-bottom: 1px solid linear-gradient(rgba(250, 235, 200, 0.222), rgba(255, 245, 210, 0.18)); }
   body:focus {
-    box-shadow: 0 0 10px rgba(10, 120, 180, 0.95);
+    box-shadow: 5px 5px 5px rgba(10, 120, 180, 0.95);
     outline: 0; }
   body a:hover, body button:hover, body input:hover {
-    box-shadow: 0 0 15px rgba(10, 120, 180, 0.95); }
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px 1px #14b978;
+    box-shadow: 1px 1px 3px 1px #14b978; }
   body input {
     border: 1px solid linear-gradient(rgba(30, 170, 230, 0.85), rgba(20, 160, 220, 0.9));
     border-bottom: 3px solid rgba(20, 160, 220, 0.9);
-    color: white; }
+    color: rgba(20, 160, 220, 0.9); }
   body h4 {
     font-size: .5em; }
+  body h2 {
+    font-size: 1.45em;
+    padding: 0 20px; }
+
+footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0; }
 
 ::-webkit-input-placeholder {
-  color: rgba(120, 250, 250, 0.5);
+  color: rgba(60, 190, 190, 0.5);
   z-index: 10; }
 
 :-moz-placeholder {
-  color: rgba(120, 250, 250, 0.5);
+  color: rgba(60, 190, 190, 0.5);
   z-index: 10; }
 
 ::-moz-placeholder {
-  color: rgba(120, 250, 250, 0.5);
+  color: rgba(60, 190, 190, 0.5);
   z-index: 10; }
 
 :-ms-input-placeholder {
-  color: rgba(120, 250, 250, 0.5);
+  color: rgba(60, 190, 190, 0.5);
   z-index: 10; }
 
 .shirt_list {
   display: flex;
   flex-wrap: wrap; }
+  .shirt_list li {
+    width: 20%;
+    height: 300px; }
+  .shirt_list .list_image {
+    width: 100%; }
 
 .each_shirt {
   border: 2px rgba(140, 40, 10, 0.5);
@@ -85,7 +104,7 @@ body {
 .shirt_price {
   color: #14b978; }
 
-.list_image, .modal_shirt {
+.modal_shirt {
   height: 12%;
   max-height: 12%;
   min-height: 12%;
@@ -115,9 +134,13 @@ body {
   color: white;
   border: #f05abe; }
 
+.add_shirt {
+  padding: 20px; }
+
 #logo {
-  font-size: 1.5em;
-  float: left; }
+  font-size: 1.7em;
+  float: left;
+  padding-left: 10px; }
 
 #header {
   padding-bottom: 20px;
@@ -125,13 +148,19 @@ body {
   #header nav {
     padding: 2px;
     width: 100%;
+    height: 50px;
     padding-left: 10px;
-    background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85));
-    text-align: center;
-    text-shadow: 1px 1px rgba(10, 120, 180, 0.95); }
-    #header nav a {
-      padding: 0 20px;
-      box-shadow: 2px rgba(10, 120, 180, 0.95); }
+    background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(180, 180, 180, 0.85)); }
+    #header nav .link {
+      text-align: center;
+      padding-right: 105px; }
+      #header nav .link a {
+        padding: 0 20px;
+        box-shadow: 3px rgba(10, 120, 180, 0.95); }
+
+#search_form {
+  padding-left: 450px;
+  padding-top: 20px; }
 
 #modal {
   background: rgba(0, 0, 0, 0.5);
